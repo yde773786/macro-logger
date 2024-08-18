@@ -28,6 +28,8 @@
 #else
 #include <time.h>
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 #endif
 
 // === auxiliar functions
@@ -40,9 +42,7 @@ static inline char *timenow();
 #define INFO_LEVEL      0x02
 #define DEBUG_LEVEL     0x03
 
-#ifndef LOG_LEVEL
-#define LOG_LEVEL   DEBUG_LEVEL
-#endif
+#define LOG_LEVEL      DEBUG_LEVEL
 
 #ifdef __OBJC__
 
