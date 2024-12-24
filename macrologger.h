@@ -42,7 +42,9 @@ static inline char *timenow();
 #define INFO_LEVEL      0x02
 #define DEBUG_LEVEL     0x03
 
-#define LOG_LEVEL      DEBUG_LEVEL
+#ifndef LOG_LEVEL
+#define LOG_LEVEL   INFO_LEVEL
+#endif
 
 #ifdef __OBJC__
 
